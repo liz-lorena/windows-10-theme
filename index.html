@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    {block:Description}
+    <meta name="description" content="{MetaDescription}">
+    {/block:Description}
+    
+    <meta name="text:ouo" content="ouo">
+    <meta name="color:ouo" content="ouo">
+    <meta name="image:ouo" content="ouo">
+    
+    <!--Custom Google Font-->
+    <meta name="text:CustomGoogleFontCode" content="">
+    <meta name="text:CustomGoogleFontName" content="">
+    <meta name="text:CustomFontSize" content="12">
+    
+    <!--Custom Page Links-->
+    <meta name="text:CustomLink1Name" content="">
+    <meta name="text:CustomLink1" content="">
+    <meta name="text:CustomLink2Name" content="">
+    <meta name="text:CustomLink2" content="">
+    <meta name="text:CustomLink3Name" content="">
+    <meta name="text:CustomLink3" content="">
+    
+    <!--Social Media Links-->
+    <meta name="text:TwitterUsername" content="">
+    <meta name="text:GithubUsername" content="">
+    <meta name="text:InstagramUsername" content="">
+    <meta name="text:Website" content="">
+
+    <title>{Title}</title>
+    
+    
+
+    {CustomGoogleFontCode}
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="http://static.tumblr.com/twte3d7/H8Glm663z/masonry.js"></script>
+    
+
+<script src="//static.tumblr.com/ihhnoee/12Cotb0p2/jquery.style-my-tooltips.js"></script>
+
+<script>
+    (function($){
+        $(document).ready(function(){
+            $("a[title]").style_my_tooltips({
+                tip_follows_cursor:false,
+                tip_delay_time:100,
+                tip_fade_speed:300,
+            attribute:"title"
+});
+});
+})(jQuery);
+</script>
+
+    <script src="/index.js"></script>
+    <script type="text/javascript">
+
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+    
+    
+
+</script>
+
+<script type="text/javascript">
+    function hide(idOne, idTwo, idThree) {
+        var e = document.getElementById(idOne);
+        var f = document.getElementById(idTwo);
+        var g = document.getElementById(idThree);
+        
+        e.style.display = 'none';
+        f.style.display = 'none';
+        g.style.display = 'none';
+        
+    }
+</script>
+    <link href="/index.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="{Favicon}">
+
+        
+        <style type="text/css">
+            html {
+                -webkit-transition: all 200ms linear;
+                transition: all 200ms linear;
+            }
+            
+            body {
+                background-color: {BackgroundColor}; 
+                {block:ifHeaderImage}
+                background: url('{HeaderImage}');
+                background-repeat: no-repeat;
+                background-position: top;
+                {/block:ifHeaderImage}
+                -webkit-transition: all 200ms linear;
+                transition: all 200ms linear;
+            }
+            
+            form {
+                display: inline;
+            }
+                    
+            .startbtn {
+                float: left;
+                width: 50px;
+                margin-right: -3px;
+                height: 117%;
+                border: none;
+                background-color: rgb(225, 225, 225,0);
+                color: white;
+                -webkit-transition: all 50ms linear;
+                transition: all 50ms linear;
+            }
+            
+            .startbtn:hover {
+                background-color: rgb(225, 225, 225,.2);
+                color: {AccentColor};
+            }
+            
+            span.fa-volume-up, span.fa-wifi, span.fa-battery-2 {
+                color: white;
+                font-size: 80%;
+            }
+            
+            span.fa-angle-up {
+                color: white;
+            }
+            
+            #soundicon, #wifiicon, #batteryicon, #hiddenicons {
+                float: right;
+                height: 100%;
+                width: 25px;
+                margin-right: 5px;
+                margin-top: 3px;
+            }
+            
+            #soundicon {
+                margin-right: -2px;
+            }
+            
+            .hideallbtn {
+                width: 1px;
+                height: 100%;
+                float: right;
+                background-color: rgb(225, 225, 225,0);
+                color: rgb(225, 225, 225,0);
+                border: none;
+                border-left: 1px solid white;
+                -webkit-transition: all 50ms linear;
+                transition: all 50ms linear;
+            }
+            
+            .hideallbtn:hover {
+                background-color: rgb(225,255,255,.2);
+            }
+            
+            .actionbtn {
+                width: 50px;
+                height: 100%;
+                float: right;
+                background-color: rgb(225, 225, 225,0);
+                color: white;
+                border: none;
+                -webkit-transition: all 50ms linear;
+                transition: all 50ms linear;
+            }
+            
+            .actionbtn:hover {
+                background-color: rgb(225, 225, 225,.2);
+            }
+            
+            .centerbtn {
+                color: white;
+                height: 100px;
+                width: 120px;
+                margin-right: 0px;
+                margin-left: 0px;
+                margin-top: 0;
+                margin-bottom: 3px;
+                background-color: rgb(225, 225, 225,.5);
+                font-size: 75%;
+                text-align: left;
+                padding: 0px 3px 0px 3px;
+                border: 1px solid rgb(225, 225, 225,.5);
+                -webkit-transition: all 50ms linear;
+                transition: all 50ms linear;
+            }
+            
+            .centerbtn span {
+            }
+            
+            .centerbtn p {
+                margin-top: 55px;
+                margin-bottom: 0px;
+            }
+            
+            .centerbtn:hover {
+                background-color: rgb(225, 225, 225,.7);
+                border: 1px solid white;
+            }
+            
+            .twoleftbtn {
+                margin-right: -2px;
+            }
+            
+            .tagbtn {
+                float: right;
+                border-radius: 100%;
+                background-color: rgb(225, 225, 225,.2);
+                height: 30px;
+                width: 30px;
+                border: 1px solid rgb(225, 225, 225,0);
+                color: white;
+                font-size: 60%;
+                margin-top: 5px;
+                margin-right: 5px;
+                -webkit-transition: all 200ms linear;
+                transition: all 200ms linear;
+            }
+            
+            .tagbtn:hover {
+                background-color: rgb(225, 225, 225,.5);
+            }
+            
+            #tagbtns {
+                float: right;
+            }
+            
+            span.fa-tumblr-square {
+                margin-top: 6px;
+            }
+            
+            #postsbtn {
+                width: 50px;
+                height: 100%;
+                background-color: rgb(225, 225, 225,0);
+                color: white;
+                border: none;
+                float:left;
+                border-bottom: 4px solid rgb(225,225,225,.5);
+                -webkit-transition: all 50ms linear;
+                transition: all 50ms linear;
+            }
+            
+            #postsbtn:hover {
+                background-color: rgb(225, 225, 225,.2);
+            }
+            
+            #profileavi {
+                border-radius: 100%;
+                height: 24px;
+                margin-left: 13px;
+                margin-top: 13px;
+            }
+            
+            #profileavisquare {
+                background-color: rgb(225, 225, 225,.5);
+                height: 50px;
+                width: 50px;
+                border: 1px solid white;
+            }
+            
+            #credit {
+                position: fixed;
+                bottom: 0;
+                margin-bottom: 40px;
+            }
+            
+            #credit, #twittersquare, #githubsquare, #instagramsquare, #websitesquare {
+                background-color: rgb(225, 225, 225,0);
+                height: 50px;
+                width: 50px;
+                border: 1px solid rgb(225, 225, 225,0);
+                color: white;
+                -webkit-transition: all 200ms linear;
+                transition: all 200ms linear;
+            }
+            
+            #credit:hover, #twittersquare:hover, #githubsquare:hover, #instagramsquare:hover, #websitesquare:hover {
+                background-color: rgb(225, 225, 225,.2);
+                border-color: white;
+            }
+            
+            #postsspace {
+                width: 700px;
+                overflow: auto;
+	  	        height: 100vh;
+	  	        margin: 0 auto;
+	  	        padding: 20px;
+            }
+            
+            #postsspacefix {
+                margin-top: 80px;
+            }
+            
+            .postheader {
+                width: 100%;
+                background-color: {AccentColor};
+                height: 30px;
+                color: white;
+                font-size: 70%;
+            }
+            
+            .postheadernav {
+                border-bottom: 2px solid #F0F0F0;
+                height: 20px;
+                padding: 0px;
+                background-color: white;
+            }
+            
+            .postheadernav2 {
+                border: none;
+                height: 39px;
+                padding: 0px;
+            }
+            
+            .postheadernavbtn {
+                height: 100%;
+                background-color: white;
+                border: 1px solid white;
+                border-bottom: 2px solid #F0F0F0;
+                border-top: 1px solid {AccentColor}; 
+                font-size: 60%;
+                color: black;
+                padding: 0px 5px 0px 5px;
+                margin-top: -17px;
+            }
+            
+            .postheadernavbtn:hover {
+                background-color: #E5F3FF;
+                border-color: #CCE8FF;
+                border-top-color: {AccentColor};
+            }
+            
+            .postheadernavbtn:focus {
+                background-color: #CCE8FF;
+                border-color: #99D1FF;
+                border-top-color: {AccentColor}; 
+            }
+            
+            .dropdown-menu {
+                border-radius: 0;
+                border: 1px solid #CCCCCC;
+                background-color: #F2F2F2;
+                font-size: 60%;
+                padding: 2px;
+                -webkit-box-shadow: 6px 6px 2px -3px rgba(117,117,117,1);
+-moz-box-shadow: 6px 6px 2px -3px rgba(117,117,117,1);
+box-shadow: 6px 6px 2px -3px rgba(117,117,117,1);
+            }
+            
+            .dropdown-item {
+                padding: 1px;
+                padding-left: 30px;
+            }
+            
+            .dropdown-item:hover {
+                background-color: #91C9F7;
+            }
+            
+            .reblogbtn, .likebtn {
+                height: 100%;
+                width: 50px;
+                border: none;
+                color: white;
+                float: right;
+                background-color: rgb(225,225,225,0);
+            }
+            
+            .reblogbtn:hover {
+                background-color: rgb(225,225,225,.2);
+            }
+            
+            .reblogbtn:focus {
+                background-color: rgb(225,225,225,.5);
+            }
+            
+            .likebtn:hover {
+                background-color: red;
+            }
+            
+            .likebtn:focus {
+                background-color: rgb(255,0,0,.6);
+            }
+            
+            .postbody {
+                font: {CustomGoogleFont};
+                font-size: {CustomFontSize}pt;
+            }
+            
+            .post {
+		        margin: 0 auto;
+		        margin-top: 50px;
+		        border-radius: 0px;
+		        border: 1px solid {AccentColor}; 
+		        width: 80%;
+            }
+            
+            .text, .quote, .chat, .link {
+                background-color: #FFFFFF;
+            }
+            
+            .photo, .video, .photoset, .panorama {
+                background-color: #222222;
+            }
+            
+            .audio {
+                background-color: #000000;
+            }
+            
+            .tasknavbtn {
+                border: none;
+                color: white;
+                background-color: rgb(225,225,225,0);
+                height: 100%;
+                width: 35px;
+                border-right: 1px solid {AccentColor};
+                -webkit-transition: all 50ms linear;
+                transition: all 50ms linear;
+            }
+            
+            .tasknavbtn.current {
+                background-color: rgb(225,225,225,.2);
+            }
+            
+            .tasknavbtn:hover {
+                background-color: rgb(225,225,225,.2);
+            }
+        
+             .tasknavbtn:focus {
+                background-color: rgb(225,225,225,.1);
+            }
+            
+            #taskbar {
+                border-radius: 0;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background-color: {AccentColor}; 
+                height: 39px;
+                width: 100%;
+            }
+            
+            .arrow-up {
+                width: 0; 
+                height: 0; 
+                border-left: 10px solid transparent;
+                border-right: 10px solid rgb(225, 225, 225,.2);
+                border-bottom: 10px solid transparent;
+                border-top: 10px solid rgb(225, 225, 225,.2);
+                margin-left: 51px;
+                margin-top: -20px;
+            }
+            
+            #description {
+                background-color: rgb(225, 225, 225,.2);
+                padding: 5px 5px 5px 10px;
+                color: white;
+                font-size: 75%;
+                width: 78%;
+                float: right;
+                margin-top: -50px;
+            }
+            
+            #home {
+                width: 320px;
+                height: 430px;
+                left: 0;
+                bottom: 0;
+                position: fixed;
+                background-color: {AccentColor};
+                border-right: 1px solid white;
+                display: none;
+            }
+            
+            #actioncenter {
+                right: 0;
+                width: 396px;
+                height: 100vh;
+                position: fixed;
+                background: {AccentColor};
+                display: none;
+            }
+            
+            #centerbtns {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                margin-left: 15px;
+                margin-right: 15px;
+                margin-bottom: 60px;
+            }
+            
+            #windate {
+                width: 75px;
+                height: 100%;
+                float: right;
+                padding: 0px 5px 5px 5px;
+                border: none;
+                color: white;
+                font-size: 65%;
+                text-align: center;
+                background-color: rgb(225, 225, 225,0);
+                -webkit-transition: all 200ms linear;
+                transition: all 200ms linear;
+            }
+            
+            #windate:hover {
+                background-color: rgb(225, 225, 225,.2);
+                cursor: arrow;
+            }
+            
+            [type=submit] {
+                height: 100%;
+                margin-left: -338px;
+                margin-top: 10px;
+                width: 10px;
+            }
+            
+            [type=text] {
+                float: left;
+                margin-left: 3px;
+                width: 300px;
+                padding: 5px 5px 18px 5px;
+                padding-left: 40px;
+                height: 54px;
+                margin-top: 0;
+                background-color: #F5F2F9;
+                border: 1px solid lightgray;
+                font-size: 75%;
+            }
+            
+            [type=text]:focus {
+                background-color: white;
+            
+            }
+            
+            /*Notes Styling*/
+            ol.notes {
+                padding: 0px;
+                margin: 25px 0px;
+                list-style-type: none;
+                border-bottom: solid 1px #ccc;
+            }
+
+            ol.notes li.note {
+                border-top: solid 1px #ccc;
+                padding: 10px;
+            }
+
+            ol.notes li.note img.avatar {
+                vertical-align: -4px;
+                margin-right: 10px;
+                width: 16px;
+                height: 16px;
+            }
+
+            ol.notes li.note span.action {
+                font-weight: bold;
+            }
+
+            ol.notes li.note .answer_content {
+                font-weight: normal;
+            }
+
+            ol.notes li.note blockquote {
+                border-color: #eee;
+                padding: 4px 10px;
+                margin: 10px 0px 0px 25px;
+            }
+
+            ol.notes li.note blockquote a {
+                text-decoration: none;
+            }
+            
+            {CustomCSS}
+        </style>
+    </head>
+    <body>
+        <!--Body-->
+        <div class="container-fluid">
+            
+            
+        
+            <!--Personal Section-->
+            <div id="home">
+                <div id="profileavisquare">
+                <img src="{PortraitURL-24}" class="img-fluid" id="profileavi"></img> 
+                </div>
+                <div class="arrow-up">
+                    
+                </div>
+                <div id="description">
+                    <p>
+                        {Description}
+                    </p>
+                </div>
+                
+                <div id="tagbtns">
+                <button class="tagbtn" title="{Tagged}">
+                    <span class="fa-tag fa-fw fa" aria-hidden="true"></span>
+                </button>
+                <button class="tagbtn" title="{Tagged}">
+                    <span class="fa-file-o fa-fw fa" aria-hidden="true"></span>
+                </button>
+                <button class="tagbtn" title="{Tagged}">
+                    <span class="fa-file-o fa-fw fa" aria-hidden="true"></span>
+                </button>
+                </div>
+                
+                <!--Pages-->
+                <!--{block:HasPages}
+									{block:Pages}
+									<div class="pagelist">
+										<a href="{URL}">{Label}</a>
+										</div>
+										{/block:Pages}
+										{/block:HasPages}-->
+                
+                {block:ifTwitterUsername}
+                <button id="twittersquare" onclick="window.location.href='https://twitter.com/{TwitterUsername}';">
+                    <span class="fa-twitter fa-fw fa" aria-hidden="true"></span>
+                </button><br>
+                {/block:ifTwitterUsername}
+                
+                {block:ifGithubUsername}
+                <button id="githubsquare" onclick="window.location.href='https://github.com/{GithubUsername}';">
+                    <span class="fa-github fa-fw fa" aria-hidden="true"></span>
+                </button><br>
+                {/block:ifGithubUsername}
+                
+                {block:ifInstagramUsername}
+                <button id="instagramsquare" onclick="window.location.href='https://instagram.com/{InstagramUsername}';">
+                    <span class="fa-instagram fa-fw fa" aria-hidden="true"></span>
+                </button><br>
+                {/block:ifInstagramUsername}
+                
+                {block:ifWebsite}
+                <button id="websitesquare" onclick="window.location.href='{Website}';">
+                    <span class="fa-link fa-fw fa" aria-hidden="true"></span>
+                </button><br>
+                {/block:ifWebsite}
+                
+                <button id="credit" title="PoweredByLizThemes" onclick="window.location.href='https://bylizthemes.tumblr.com';">
+                    <span class="fa-power-off fa-fw fa" aria-hidden="true"></span>
+                </button>
+            </div>
+            <!--End Personal Section-->
+            <!--Action Center-->
+            <div id="actioncenter">
+                
+                <div id="centerbtns">
+                <div><button class="centerbtn twoleftbtn" onclick="window.location.href='/';">
+                    <span class="fa-refresh fa-fw fa" aria-hidden="true"></span><br>
+                    <p>Refresh</p>
+                    </button>
+                <button class="centerbtn twoleftbtn" onclick="window.location.href='/archive';">
+                    <span class="fa-calendar fa-fw fa" aria-hidden="true"></span><br>
+                    <p>Archive</p>
+                    </button>
+                <button class="centerbtn tworightbtn" onclick="window.location.href='/ask';">
+                    <span class="fa-envelope-o fa-fw fa" aria-hidden="true"></span><br>
+                    <p>Ask</p>
+                    </button></div>
+                <div><button class="centerbtn twoleftbtn" onclick="window.location.href='{CustomLink1}';"> 
+                    <span class="fa-question-circle-o fa-fw fa" aria-hidden="true"></span><br>
+                    <p>{CustomLink1Name}</p> 
+                    </button>
+                <button class="centerbtn twoleftbtn" onclick="window.location.href='{CustomLink2}';"> 
+                    <span class="fa-star-o fa-fw fa" aria-hidden="true"></span>
+                    <p>{CustomLink2Name}</p> 
+                    </button>
+                <button class="centerbtn tworightbtn" onclick="window.location.href='{CustomLink3}';"> 
+                    <span class="fa-thumbs-o-up fa-fw fa" aria-hidden="true"></span>
+                    <p>{CustomLink3Name}</p> 
+                    </button></div>
+                </div>
+            </div>
+            <!--End of Action Center-->
+            <!--Taskbar-->
+            <div id="taskbar">
+                <!--Home Btn-->
+                <button class="startbtn" title="About" onclick="toggle_visibility('home');">
+                    <span class="fa-windows fa-fw fa" aria-hidden="true"></span>
+                </button>
+                <!--Searchbar-->
+                <form action="/search" method="get">
+                
+                <input type="text" name="q" value="{SearchQuery}" placeholder="Type here to search"/>
+    <span type="submit" class="fa fa-fw fa-search" aria-hidden="true"></span>
+</form>
+
+<!--Pagination-->
+{block:Pagination}{block:PreviousPage}
+                <button class="tasknavbtn" onclick="window.location.href='{PreviousPage}';"><span class="fa-angle-left fa-fw fa" aria-hidden="true"></span></button>
+            {/block:PreviousPage}{block:JumpPagination length="5"}{block:CurrentPage}
+                    <button class="current_page tasknavbtn current">{PageNumber}</button>
+                {/block:CurrentPage}{block:JumpPage}
+                    <button class="jump_page tasknavbtn" onclick="window.location.href='{URL}';">{PageNumber}</button>
+                {/block:JumpPage}{/block:JumpPagination}{block:NextPage}
+                <button class="tasknavbtn" onclick="window.location.href='{NextPage}';"><span class="fa-angle-right fa-fw fa" aria-hidden="true"></span></button>
+            {/block:NextPage}{/block:Pagination}
+
+           <!--Posts Hide Button-->
+           <button id="postsbtn" title="Show/Hide Posts" onclick="toggle_visibility('postsspace');">
+               <span class="fa-tumblr-square fa-fw fa" aria-hidden="true"></span>
+           </button>
+           
+           <!--Hide Everything Button-->
+           <button class="hideallbtn" title="Hide Everything" onclick="hide('actioncenter','home','postsspace');">
+               
+           </button>
+            
+            <!--Action Center Button-->
+            <button class="actionbtn" title="Navigation" onclick="toggle_visibility('actioncenter');">
+                <span class="fa-commenting fa-fw fa" aria-hidden="true">
+                    
+                </span>
+            </button>
+            
+            <!--Windows 10 Date-->
+            <button id="windate" title="full time">
+               <p>
+                12:59 PM<br>
+                6/28/2018
+                </p>
+            </button>
+                
+                <div id="soundicon">
+                    <span class="fa-volume-up fa-fw fa" aria-hidden="true"></span>
+                </div>
+                
+                <div id="wifiicon">
+                    <span class="fa-wifi fa-fw fa" aria-hidden="true"></span>
+                </div>
+                
+                <div id="batteryicon">
+                    <span class="fa-battery-2 fa-fw fa" aria-hidden="true"></span>
+                </div>
+                
+                <div id="hiddenicons">
+                    <span class="fa-angle-up fa-fw fa" aria-hidden="true"></span>
+                </div>
+                
+            </div>
+            <!--End Taskbar-->
+        
+        
+        
+        
+        <!--Posts Space-->
+            <div id="postsspace">
+                
+                 
+            {block:Posts}{block:Text}
+                    <div class="post text {TagsAsClasses}">
+                        <div class="postheader">
+                            <img src="" style="height:24px; width:24px;"> {block:Title}
+                             {Title} -
+                        {/block:Title} Notepad
+                            <button class="likebtn">{LikeButton}</button>
+                            <button class="reblogbtn"><span class="fa-retweet fa-fw fa" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="postheadernav">
+                            <div class="btn-group">
+                            <button class="postheadernavbtn" title="{SourceTitle}" onclick="window.location.href='{SourceURL}'">Source</button>
+                            {block:HasTags}
+                            <button class="postheadernavbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tags</button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      {block:Tags}
+    <a class="dropdown-item" href="{TagURL}">{Tag}</a>
+    {/block:Tags}
+  </div>
+  {/block:HasTags}
+                            {block:Date}<button title="{DayOfMonth} of {ShortMonth}, {Year}" class="postheadernavbtn disabled">Date</button>{/block:Date}
+                            <button class="postheadernavbtn" onclick="window.location.href='{Permalink}'">Notes: {NoteCount}</button>
+                            </div>
+                        </div>
+                        {block:Title}
+                            <h3><a href="{Permalink}">{Title}</a></h3>
+                        {/block:Title}
+                        <div class="postbody">{Body}</div>
+                    </div>
+                {/block:Text}{block:Photo}
+                    <div class="post photo {TagsAsClasses}">
+                    <div class="postheader">
+                            <img src="" style="height:24px; width:24px;"> {block:Title}
+                             {Title} -
+                        {/block:Title} Notepad
+                            <button class="likebtn">{LikeButton}</button>
+                            <button class="reblogbtn"><span class="fa-retweet fa-fw fa" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="postheadernav">
+                            <div class="btn-group">
+                            <button class="postheadernavbtn" title="{SourceTitle}" onclick="window.location.href='{SourceURL}'">Source</button>
+                            {block:HasTags}
+                            <button class="postheadernavbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tags</button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      {block:Tags}
+    <a class="dropdown-item" href="{TagURL}">{Tag}</a>
+    {/block:Tags}
+  </div>
+  {/block:HasTags}
+                            {block:Date}<button title="{DayOfMonth} of {ShortMonth}, {Year}" class="postheadernavbtn disabled">Date</button>{/block:Date}
+                            <button class="postheadernavbtn" onclick="window.location.href='{Permalink}'">Notes: {NoteCount}</button>
+                            </div>
+                        </div>
+                        <p style="text-align:center"><img src="{PhotoURL-500}" alt="{PhotoAlt}" class="img-fluid" style="margin: 0 auto; "/></p>
+
+                        {block:Caption}
+                            <div class="caption postbody">{Caption}</div>
+                        {/block:Caption}
+                    </div>
+                {/block:Photo}{block:Panorama}
+                    <div class="post panorama {TagsAsClasses}">
+                    <div class="postheader">
+                            <img src="" style="height:24px; width:24px;"> {block:Title}
+                             {Title} -
+                        {/block:Title} Notepad
+                            <button class="likebtn">{LikeButton}</button>
+                            <button class="reblogbtn"><span class="fa-retweet fa-fw fa" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="postheadernav">
+                            <div class="btn-group">
+                            <button class="postheadernavbtn" title="{SourceTitle}" onclick="window.location.href='{SourceURL}'">Source</button>
+                            {block:HasTags}
+                            <button class="postheadernavbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tags</button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      {block:Tags}
+    <a class="dropdown-item" href="{TagURL}">{Tag}</a>
+    {/block:Tags}
+  </div>
+  {/block:HasTags}
+                            {block:Date}<button title="{DayOfMonth} of {ShortMonth}, {Year}" class="postheadernavbtn disabled">Date</button>{/block:Date}
+                            <button class="postheadernavbtn" onclick="window.location.href='{Permalink}'">Notes: {NoteCount}</button>
+                            </div>
+                        </div>
+                        {LinkOpenTag}
+                            <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+                        {LinkCloseTag}{block:Caption}
+                            <div class="caption postbody">{Caption}</div>
+                        {/block:Caption}
+                    </div>
+                {/block:Panorama}{block:Photoset}
+                    <div class="post photoset {TagsAsClasses}">
+                     <div class="postheader">
+                            <img src="" style="height:24px; width:24px;"> {block:Title}
+                             {Title} -
+                        {/block:Title} Notepad
+                            <button class="likebtn">{LikeButton}</button>
+                            <button class="reblogbtn"><span class="fa-retweet fa-fw fa" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="postheadernav">
+                            <div class="btn-group">
+                            <button class="postheadernavbtn" title="{SourceTitle}" onclick="window.location.href='{SourceURL}'">Source</button>
+                            {block:HasTags}
+                            <button class="postheadernavbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tags</button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      {block:Tags}
+    <a class="dropdown-item" href="{TagURL}">{Tag}</a>
+    {/block:Tags}
+  </div>
+  {/block:HasTags}
+                            {block:Date}<button title="{DayOfMonth} of {ShortMonth}, {Year}" class="postheadernavbtn disabled">Date</button>{/block:Date}
+                            <button class="postheadernavbtn" onclick="window.location.href='{Permalink}'">Notes: {NoteCount}</button>
+                            </div>
+                        </div>
+                        <p style="text-align: center;">{Photoset-500}</p>{block:Caption}
+                            <div class="caption postbody">{Caption}</div>
+                        {/block:Caption}
+                    </div>
+                {/block:Photoset}{block:Quote}
+                    <div class="post quote {TagsAsClasses}">
+                    <div class="postheader">
+                            <img src="" style="height:24px; width:24px;">{Length} Quote - Notepad
+                            <button class="likebtn">{LikeButton}</button>
+                            <button class="reblogbtn"><span class="fa-retweet fa-fw fa" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="postheadernav">
+                            <div class="btn-group">
+                            <button class="postheadernavbtn" title="{SourceTitle}" onclick="window.location.href='{SourceURL}'">Source</button>
+                            {block:HasTags}
+                            <button class="postheadernavbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tags</button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      {block:Tags}
+    <a class="dropdown-item" href="{TagURL}">{Tag}</a>
+    <a class="dropdown-item" href="{TagURL}">Something else here</a>
+    {/block:Tags}
+  </div>
+  {/block:HasTags}
+                            {block:Date}<button title="{DayOfMonth} of {ShortMonth}, {Year}" class="postheadernavbtn disabled">Date</button>{/block:Date}
+                            <button class="postheadernavbtn" onclick="window.location.href='{Permalink}'">Notes: {NoteCount}</button>
+                            </div>
+                        </div>
+                        "{Quote}"
+
+                        {block:Source}
+                            <div class="source">{Source}</div>
+                        {/block:Source}
+                    </div>
+                {/block:Quote}{block:Link}
+                    <div class="post link {TagsAsClasses}">
+                    <div class="postheader">
+                            <img src="" style="height:24px; width:24px;"> Link - Notepad
+                            <button class="likebtn">{LikeButton}</button>
+                            <button class="reblogbtn"><span class="fa-retweet fa-fw fa" aria-hidden="true"></span></button>
+                        </div>
+                        <a href="{URL}" class="link" {Target}>{Name}</a>
+
+                        {block:Description}
+                            <div class="description">{Description}</div>
+                        {/block:Description}
+                    </div>
+                {/block:Link}{block:Chat}
+                    <div class="post chat {TagsAsClasses}">
+                    <div class="postheader">
+                            <img src="" style="height:24px; width:24px;"> Chat - Notepad
+                            <button class="likebtn">{LikeButton}</button>
+                            <button class="reblogbtn"><span class="fa-retweet fa-fw fa" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="postheadernav">
+                            <div class="btn-group">
+                            <button class="postheadernavbtn" title="{SourceTitle}" onclick="window.location.href='{SourceURL}'">Source</button>
+                            {block:HasTags}
+                            <button class="postheadernavbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tags</button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      {block:Tags}
+    <a class="dropdown-item" href="{TagURL}">{Tag}</a>
+    {/block:Tags}
+  </div>
+  {/block:HasTags}
+                            {block:Date}<button title="{DayOfMonth} of {ShortMonth}, {Year}" class="postheadernavbtn disabled">Date</button>{/block:Date}
+                            <button class="postheadernavbtn" onclick="window.location.href='{Permalink}'">Notes: {NoteCount}</button>
+                            </div>
+                        </div>
+                        {block:Title}
+                            <h3><a href="{Permalink}">{Title}</a></h3>
+                        {/block:Title}
+
+                        <ul class="chat">
+                            {block:Lines}
+                                <li class="{Alt} user_{UserNumber}">
+                                    {block:Label}
+                                        <span class="label">{Label}</span>
+                                    {/block:Label}{Line}
+                                </li>
+                            {/block:Lines}
+                        </ul>
+                    </div>
+                {/block:Chat}{block:Video}
+                    <div class="post video {TagsAsClasses}">
+                    <div class="postheader">
+                            <img src="" style="height:24px; width:24px;"> {block:Title}
+                             {Title} -
+                        {/block:Title} Notepad
+                            <button class="likebtn">{LikeButton}</button>
+                            <button class="reblogbtn"><span class="fa-retweet fa-fw fa" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="postheadernav">
+                            <div class="btn-group">
+                            <button class="postheadernavbtn" title="{SourceTitle}" onclick="window.location.href='{SourceURL}'">Source</button>
+                            {block:HasTags}
+                            <button class="postheadernavbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tags</button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      {block:Tags}
+    <a class="dropdown-item" href="{TagURL}">{Tag}</a>
+    {/block:Tags}
+  </div>
+  {/block:HasTags}
+                            {block:Date}<button title="{DayOfMonth} of {ShortMonth}, {Year}" class="postheadernavbtn disabled">Date</button>{/block:Date}
+                            <button class="postheadernavbtn" onclick="window.location.href='{Permalink}'">Notes: {NoteCount}</button>
+                            </div>
+                        </div>
+                        {Video-500}{block:Caption}
+                            <div class="caption postbody">{Caption}</div>
+                        {/block:Caption}
+                    </div>
+                {/block:Video}{block:Audio}
+                    <div class="post audio {TagsAsClasses}">
+                    <div class="postheader">
+                            <img src="" style="height:24px; width:24px;"> {block:Title}
+                             {Title} -
+                        {/block:Title} Notepad
+                            <button class="likebtn">{LikeButton}</button>
+                            <button class="reblogbtn"><span class="fa-retweet fa-fw fa" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="postheadernav">
+                            <div class="btn-group">
+                            <button class="postheadernavbtn" title="{SourceTitle}" onclick="window.location.href='{SourceURL}'">Source</button>
+                            {block:HasTags}
+                            <button class="postheadernavbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tags</button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      {block:Tags}
+    <a class="dropdown-item" href="{TagURL}">{Tag}</a>
+    {/block:Tags}
+  </div>
+  {/block:HasTags}
+                            {block:Date}<button title="{DayOfMonth} of {ShortMonth}, {Year}" class="postheadernavbtn disabled">Date</button>{/block:Date}
+                            <button class="postheadernavbtn" onclick="window.location.href='{Permalink}'">Notes: {NoteCount}</button>
+                            </div>
+                        </div>
+                        {AudioEmbed}{block:Caption}
+                            <div class="caption postbody">{Caption}</div>
+                        {/block:Caption}
+                    </div>
+                {/block:Audio}{/block:Posts}
+
+                <div id="postsspacefix"></div>
+            </div>
+            <!--End of Posts Space-->
+        
+        </div>
+        <!--End Body-->
+        
+        
+        
+    </body>
+</html>
